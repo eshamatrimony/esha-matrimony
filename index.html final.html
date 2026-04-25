@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Esha Matrimony - Find Your Perfect Life Partner. Trusted matrimony service with thousands of verified profiles.">
+<meta name="keywords" content="matrimony, marriage, bride, groom, Hindu matrimony, Telugu matrimony, wedding">
+<title>Esha Matrimony – Find Your Perfect Life Partner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+.profile-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;}
+<style>
+:root {
+  --crimson: #8B1A1A;
+  --crimson-light: #C0392B;
+  --gold: #C9A84C;
+  --gold-light: #F0C96A;
+  --gold-pale: #FDF3DC;
+  --ivory: #FFFDF7;
+  --dark: #1A0A0A;
+  --text: #3D2B1F;
+  --text-light: #7A5C4E;
+  --white: #FFFFFF;
+  --border: rgba(201,168,76,0.3);
+  --shadow: 0 8px 40px rgba(139,26,26,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{
+  scroll-behavior:smooth;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+body{
+  font-family:'Lato',sans-serif;
+  background:var(--ivory);
+  color:var(--text);
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow-x:hidden;
+}
+img,video,canvas,svg{max-width:100%;height:auto;}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:#f1e8d0;}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,253,247,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:all .3s;}
+nav.scrolled{box-shadow:0 4px 20px rgba(139,26,26,0.1);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:70px;}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;}
+.logo-text{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--crimson);}
+.logo-text span{color:var(--gold);font-style:italic;}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+.nav-links a{text-decoration:none;color:var(--text);font-size:14px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;position:relative;transition:color .3s;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .3s;}
+.nav-links a:hover{color:var(--crimson);}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{display:flex;gap:10px;}
+.btn-outline{padding:8px 20px;border:2px solid var(--crimson);color:var(--crimson);border-radius:25px;font-size:13px;font-weight:700;cursor:pointer;background:transparent;transition:all .3s;text-decoration:none;}
+.btn-outline:hover{background:var(--crimson);color:white;}
+.btn-primary{padding:8px 20px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:25px;font-size:13px;font-weight:700;cursor:pointer;transition:all .3s;text-decoration:none;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,26,26,0.35);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--crimson);transition:all .3s;}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--ivory);z-index:999;padding:32px 24px;flex-direction:column;gap:24px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{font-size:18px;color:var(--text);text-decoration:none;font-family:'Playfair Display',serif;padding:12px 0;border-bottom:1px solid var(--border);}
+  .mobile-menu .mob-btns{display:flex;gap:12px;margin-top:16px;}
+}
+
+/* ── HERO ── */
+#home{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#0a0202;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#2D0505 0%,#6B1010 40%,#8B1A1A 70%,#4A0E0E 100%);z-index:0;}
+.hero-pattern{position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");z-index:1;}
+.hero-glow{position:absolute;top:20%;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,.15) 0%,transparent 70%);z-index:1;}
+.hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:120px 24px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.hero-left{animation:fadeInLeft .9s ease both;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.4);color:var(--gold-light);padding:6px 16px;border-radius:20px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px;}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);line-height:1.1;color:white;margin-bottom:20px;}
+.hero-title .accent{color:var(--gold-light);font-style:italic;}
+.hero-subtitle{font-size:17px;color:rgba(255,255,255,.75);line-height:1.7;margin-bottom:36px;font-weight:300;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-gold{padding:14px 32px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--dark);border:none;border-radius:30px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;text-decoration:none;display:inline-block;}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(201,168,76,.4);}
+.btn-ghost{padding:14px 32px;border:2px solid rgba(255,255,255,.4);color:white;border-radius:30px;font-size:15px;font-weight:700;cursor:pointer;background:transparent;transition:all .3s;text-decoration:none;display:inline-block;}
+.btn-ghost:hover{border-color:var(--gold-light);color:var(--gold-light);}
+.hero-stats{display:flex;gap:32px;margin-top:48px;}
+.stat-item{text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--gold-light);}
+.stat-label{font-size:12px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px;}
+.hero-right{display:flex;justify-content:center;animation:fadeInRight .9s ease both;}
+.hero-card-stack{position:relative;width:340px;height:420px;}
+.hero-card{position:absolute;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:24px;transition:all .3s;}
+.hero-card-main{inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;}
+.hero-card-back{top:20px;right:-20px;bottom:-20px;left:20px;z-index:-1;background:rgba(255,255,255,.04);}
+.couple-img{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--crimson-light));display:flex;align-items:center;justify-content:center;font-size:48px;border:3px solid rgba(201,168,76,.4);overflow:hidden;object-fit:cover;}.couple-img img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+.hero-profile-name{font-family:'Playfair Display',serif;font-size:20px;color:white;font-weight:600;}
+.hero-profile-detail{font-size:13px;color:rgba(255,255,255,.6);}
+.hero-match-badge{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--dark);padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;}
+@keyframes fadeInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fadeInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:900px){
+  .hero-content{grid-template-columns:1fr;text-align:center;}
+  .hero-right{display:none;}
+  .hero-stats{justify-content:center;}
+  .hero-btns{justify-content:center;}
+}
+
+/* ── SEARCH BAR ── */
+.search-section{background:white;padding:40px 24px;box-shadow:0 10px 40px rgba(0,0,0,.08);}
+.search-inner{max-width:1000px;margin:0 auto;}
+.search-title{text-align:center;font-family:'Playfair Display',serif;font-size:22px;color:var(--crimson);margin-bottom:24px;}
+.search-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;align-items:end;}
+.search-field label{display:block;font-size:11px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;}
+.search-field select,.search-field input{width:100%;padding:11px 14px;border:1.5px solid #e5d9c4;border-radius:10px;font-size:14px;color:var(--text);background:var(--ivory);transition:border .3s;}
+.search-field select:focus,.search-field input:focus{outline:none;border-color:var(--gold);}
+.btn-search{padding:11px 24px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;transition:all .3s;width:100%;}
+.btn-search:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,26,26,.3);}
+
+/* ── SECTION COMMON ── */
+section{
+  width:100%;
+  max-width:100%;
+  padding:80px 24px;
+}
+section[id]{scroll-margin-top:84px;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.section-label{display:inline-block;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,42px);color:var(--crimson);line-height:1.2;margin-bottom:16px;}
+.section-subtitle{font-size:16px;color:var(--text-light);max-width:540px;line-height:1.7;}
+.divider{width:60px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;margin:20px 0;}
+.centered{text-align:center;}
+.centered .divider{margin:20px auto;}
+.centered .section-subtitle{margin:0 auto;}
+
+/* ── FEATURED PROFILES ── */
+#profiles-section{background:var(--gold-pale);scroll-margin-top:84px;}
+.profiles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px;margin-top:48px;}
+.profile-card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .35s;cursor:pointer;border:1px solid var(--border);}
+.profile-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);}
+.profile-img{height:220px;position:relative;overflow:hidden;}
+.profile-img .verified-badge{position:absolute;top:12px;right:12px;background:linear-gradient(135deg,#27ae60,#2ecc71);color:white;font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:.5px;}
+.profile-img .new-badge{position:absolute;top:12px;left:12px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--dark);font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;}
+.profile-body{padding:18px;}
+.profile-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--dark);margin-bottom:4px;}
+.profile-meta{font-size:12px;color:var(--text-light);margin-bottom:12px;}
+.profile-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.tag{background:var(--gold-pale);color:var(--text);font-size:11px;padding:3px 10px;border-radius:20px;border:1px solid var(--border);}
+.profile-actions{display:flex;gap:8px;}
+.btn-interest{flex:1;padding:9px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-interest:hover{opacity:.9;}
+.btn-view{flex:1;padding:9px;background:transparent;color:var(--crimson);border:1.5px solid var(--crimson);border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-view:hover{background:var(--crimson);color:white;}
+
+/* ── ABOUT ── */
+#about{background:white;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px;}
+.about-img-wrap{position:relative;}
+.about-img-bg{width:100%;height:440px;background:linear-gradient(135deg,var(--crimson) 0%,#C0392B 50%,#922B21 100%);border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:120px;position:relative;overflow:hidden;}
+.about-img-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(0,0,0,.3),transparent);}
+.about-float{position:absolute;bottom:-20px;right:-20px;background:white;border-radius:16px;padding:20px 24px;box-shadow:0 8px 30px rgba(0,0,0,.12);border:1px solid var(--border);}
+.about-float-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--crimson);}
+.about-float-text{font-size:13px;color:var(--text-light);}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px;}
+.feature-item{display:flex;gap:14px;align-items:flex-start;}
+.feature-icon{width:44px;height:44px;min-width:44px;background:var(--gold-pale);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;border:1px solid var(--border);}
+.feature-text h4{font-size:14px;font-weight:700;color:var(--dark);margin-bottom:4px;}
+.feature-text p{font-size:13px;color:var(--text-light);line-height:1.5;}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;}.about-features{grid-template-columns:1fr;}}
+
+/* ── SERVICES ── */
+#services{background:linear-gradient(135deg,#1A0A0A 0%,#2D0505 100%);position:relative;overflow:hidden;}
+#services::before{content:'';position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9A84C' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");}
+#services .section-title{color:var(--gold-light);}
+#services .section-subtitle{color:rgba(255,255,255,.6);}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px;}
+.service-card{background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.2);border-radius:20px;padding:32px 24px;transition:all .35s;position:relative;overflow:hidden;}
+.service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.08),transparent);opacity:0;transition:opacity .3s;}
+.service-card:hover{border-color:var(--gold);transform:translateY(-6px);}
+.service-card:hover::before{opacity:1;}
+.service-icon{font-size:42px;margin-bottom:20px;display:block;}
+.service-card h3{font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:12px;}
+.service-card p{font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;}
+.service-card .card-badge{display:inline-block;background:rgba(201,168,76,.2);color:var(--gold-light);font-size:11px;padding:4px 12px;border-radius:20px;margin-top:16px;border:1px solid rgba(201,168,76,.3);}
+
+/* ── PACKAGE DETAILS ── */
+#packages{background:linear-gradient(135deg,var(--ivory) 0%,#F8F6F0 100%);position:relative;}
+.packages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;}
+.package-card{background:white;border:1px solid var(--border);border-radius:20px;padding:32px;text-align:center;transition:all .35s;position:relative;overflow:hidden;}
+.package-card.featured{border-color:var(--gold);box-shadow:0 8px 32px rgba(201,168,76,.2);}
+.package-card.featured::before{content:'Most Popular';position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--dark);font-size:12px;font-weight:700;padding:6px 16px;border-radius:0 0 12px 12px;}
+.package-header{margin-bottom:24px;}
+.package-card h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--dark);margin-bottom:8px;}
+.price{font-size:36px;font-weight:700;color:var(--crimson);margin-bottom:16px;}
+.price span{font-size:16px;color:var(--text-light);}
+.package-features{list-style:none;padding:0;margin:0 0 32px 0;text-align:left;}
+.package-features li{font-size:14px;color:var(--text);margin-bottom:12px;padding-left:20px;position:relative;}
+.package-features li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-weight:700;}
+.package-card .btn-primary{margin-top:0;}
+
+/* ── BRONZE PACKAGE ── */
+.packages-grid .package-card:nth-child(1){background:linear-gradient(135deg,#FDF4E8 0%,#F5E6D3 100%);border:2px solid #D4A574;box-shadow:0 8px 24px rgba(212,165,116,.15);}
+.packages-grid .package-card:nth-child(1) h3{color:#8B6F47;}
+.packages-grid .package-card:nth-child(1) .price{color:#A0826D;}
+.packages-grid .package-card:nth-child(1)::before{content:'Bronze';position:absolute;top:0;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#CD7F32,#B8860B);color:white;font-size:11px;font-weight:700;padding:5px 14px;border-radius:0 0 10px 10px;}
+.packages-grid .package-card:nth-child(1) .btn-primary{background:linear-gradient(135deg,#A0826D,#8B6F47);border:none;}
+
+/* ── SILVER PACKAGE ── */
+.packages-grid .package-card:nth-child(2){background:linear-gradient(135deg,#F0F4F8 0%,#E8ECF0 100%);border:2px solid #B0C4DE;box-shadow:0 8px 24px rgba(176,196,222,.15);}
+.packages-grid .package-card:nth-child(2) h3{color:#4A5F7F;}
+.packages-grid .package-card:nth-child(2) .price{color:#708090;}
+.packages-grid .package-card:nth-child(2)::before{content:'Silver';position:absolute;top:0;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#C0C0C0,#A9A9A9);color:white;font-size:11px;font-weight:700;padding:5px 14px;border-radius:0 0 10px 10px;}
+.packages-grid .package-card:nth-child(2) .btn-primary{background:linear-gradient(135deg,#708090,#4A5F7F);border:none;}
+
+/* ── GOLD PACKAGE ── */
+.packages-grid .package-card:nth-child(3){background:linear-gradient(135deg,#FFFEF9 0%,#FFF9E6 100%);border:3px solid var(--gold);box-shadow:0 12px 40px rgba(201,168,76,.25);}
+.packages-grid .package-card:nth-child(3) h3{color:var(--crimson);}
+.packages-grid .package-card:nth-child(3) .price{background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.packages-grid .package-card:nth-child(3)::before{content:'Most Popular';position:absolute;top:0;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--dark);font-size:12px;font-weight:700;padding:6px 16px;border-radius:0 0 12px 12px;}
+.packages-grid .package-card:nth-child(3) .btn-primary{background:linear-gradient(135deg,var(--crimson),var(--crimson-light));border:none;transform:scale(1.05);}
+
+/* ── DIAMOND PACKAGE ── */
+.packages-grid .package-card:nth-child(4){background:linear-gradient(135deg,#F5F0FF 0%,#E8DEFF 100%);border:2px solid #9370DB;box-shadow:0 8px 24px rgba(147,112,219,.15);}
+.packages-grid .package-card:nth-child(4) h3{color:#6B2E7A;}
+.packages-grid .package-card:nth-child(4) .price{color:#7D3C98;}
+.packages-grid .package-card:nth-child(4)::before{content:'Premium';position:absolute;top:0;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#9370DB,#6B2E7A);color:white;font-size:11px;font-weight:700;padding:5px 14px;border-radius:0 0 10px 10px;}
+.packages-grid .package-card:nth-child(4) .btn-primary{background:linear-gradient(135deg,#7D3C98,#6B2E7A);border:none;}
+
+/* ── SUCCESS STORIES ── */
+#success{background:var(--ivory);}
+.stories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;}
+.story-card{background:white;border-radius:20px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,.06);border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden;}
+.story-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.story-couple{display:flex;align-items:center;gap:16px;margin-bottom:20px;}
+.couple-avatars{display:flex;align-items:center;}
+.avatar{width:52px;height:52px;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);background:linear-gradient(135deg,var(--gold),var(--crimson-light));display:flex;align-items:center;justify-content:center;font-size:22px;}
+.avatar:nth-child(2){margin-left:-16px;}
+.heart-icon{font-size:20px;margin-left:8px;}
+.story-names{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--dark);}
+.story-date{font-size:12px;color:var(--text-light);}
+.story-text{font-size:14px;color:var(--text);line-height:1.7;font-style:italic;}
+.story-stars{color:var(--gold);font-size:16px;margin-top:14px;}
+.story-location{font-size:12px;color:var(--text-light);margin-top:8px;}
+
+/* ── STORY 1: ROSE & CORAL ── */
+.stories-grid .story-card:nth-child(1){background:linear-gradient(135deg,#FFE5E9 0%,#FFF0F5 100%);border:2px solid #FF69B4;box-shadow:0 8px 28px rgba(255,105,180,.12);}
+.stories-grid .story-card:nth-child(1) .story-names{color:#D63384;}
+.stories-grid .story-card:nth-child(1) .heart-icon{color:#FF1493;font-size:24px;}
+.stories-grid .story-card:nth-child(1) .story-stars{color:#FF69B4;}
+.stories-grid .story-card:nth-child(1) .story-card:hover{box-shadow:0 12px 36px rgba(255,105,180,.2);}
+.stories-grid .story-card:nth-child(1)::before{content:'💕';position:absolute;top:12px;right:12px;font-size:24px;opacity:.3;}
+
+/* ── STORY 2: PURPLE & LAVENDER ── */
+.stories-grid .story-card:nth-child(2){background:linear-gradient(135deg,#F3E5FF 0%,#E8DEFF 100%);border:2px solid #9370DB;box-shadow:0 8px 28px rgba(147,112,219,.12);}
+.stories-grid .story-card:nth-child(2) .story-names{color:#6B2E7A;}
+.stories-grid .story-card:nth-child(2) .heart-icon{color:#9370DB;font-size:24px;}
+.stories-grid .story-card:nth-child(2) .story-stars{color:#9370DB;}
+.stories-grid .story-card:nth-child(2)::before{content:'👑';position:absolute;top:12px;right:12px;font-size:24px;opacity:.3;}
+
+/* ── STORY 3: TEAL & CYAN ── */
+.stories-grid .story-card:nth-child(3){background:linear-gradient(135deg,#E0F7FA 0%,#D0F2F7 100%);border:2px solid #20B2AA;box-shadow:0 8px 28px rgba(32,178,170,.12);}
+.stories-grid .story-card:nth-child(3) .story-names{color:#006666;}
+.stories-grid .story-card:nth-child(3) .heart-icon{color:#20B2AA;font-size:24px;}
+.stories-grid .story-card:nth-child(3) .story-stars{color:#20B2AA;}
+.stories-grid .story-card:nth-child(3)::before{content:'💎';position:absolute;top:12px;right:12px;font-size:24px;opacity:.3;}
+
+/* ── TESTIMONIALS ── */
+#testimonials{background:linear-gradient(180deg,var(--gold-pale) 0%,white 100%);}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;}
+.testi-card{background:white;border-radius:20px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,.06);border-left:4px solid var(--gold);transition:all .3s;}
+.testi-card:hover{transform:translateY(-4px);}
+.testi-quote{font-size:36px;color:var(--gold);line-height:1;margin-bottom:12px;font-family:Georgia,serif;}
+.testi-text{font-size:14px;color:var(--text);line-height:1.7;margin-bottom:18px;}
+.testi-author{display:flex;align-items:center;gap:12px;}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--crimson),var(--gold));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:16px;}
+.testi-name{font-weight:700;font-size:14px;color:var(--dark);}
+.testi-role{font-size:12px;color:var(--text-light);}
+
+/* ── CONTACT ── */
+#contact{background:white;}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;margin-top:48px;align-items:start;}
+.contact-info{display:flex;flex-direction:column;gap:28px;}
+.contact-item{display:flex;gap:16px;align-items:flex-start;}
+.contact-icon{width:50px;height:50px;min-width:50px;background:var(--gold-pale);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;border:1px solid var(--border);}
+.contact-item h4{font-weight:700;font-size:15px;color:var(--dark);margin-bottom:4px;}
+.contact-item p,.contact-item a{font-size:14px;color:var(--text-light);text-decoration:none;line-height:1.6;}
+.contact-item a:hover{color:var(--crimson);}
+.contact-form{background:var(--gold-pale);border-radius:24px;padding:36px;border:1px solid var(--border);}
+.form-title{font-family:'Playfair Display',serif;font-size:22px;color:var(--crimson);margin-bottom:24px;}
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;font-size:12px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.6px;margin-bottom:7px;}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 16px;border:1.5px solid #e0d2b8;border-radius:10px;font-size:14px;color:var(--text);background:white;transition:all .3s;font-family:'Lato',sans-serif;}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.1);}
+.form-group textarea{resize:vertical;min-height:110px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.btn-submit{width:100%;padding:14px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;letter-spacing:.5px;}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,26,26,.3);}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+
+/* ── REGISTRATION MODAL ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:2000;align-items:center;justify-content:center;padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal{background:white;border-radius:24px;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;position:relative;animation:modalIn .3s ease;}
+@keyframes modalIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+.modal-header{background:linear-gradient(135deg,var(--crimson),var(--crimson-light));padding:28px 32px 24px;border-radius:24px 24px 0 0;position:relative;}
+.modal-header h2{font-family:'Playfair Display',serif;font-size:24px;color:white;}
+.modal-header p{font-size:14px;color:rgba(255,255,255,.7);margin-top:4px;}
+.modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;background:rgba(255,255,255,.2);border:none;border-radius:50%;color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.modal-body{padding:28px 32px;}
+.modal-tabs{display:flex;border-bottom:2px solid #e5d9c4;margin-bottom:24px;}
+.modal-tab{flex:1;padding:10px;background:transparent;border:none;font-size:14px;font-weight:700;color:var(--text-light);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .3s;}
+.modal-tab.active{color:var(--crimson);border-bottom-color:var(--crimson);}
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+
+/* ── ADMIN PANEL ── */
+#admin{background:var(--gold-pale);border-top:2px solid var(--border);}
+.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:32px;}
+.admin-stat{background:white;border-radius:16px;padding:24px;text-align:center;border:1px solid var(--border);transition:all .3s;}
+.admin-stat:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.admin-stat-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--crimson);}
+.admin-stat-label{font-size:13px;color:var(--text-light);margin-top:4px;}
+.admin-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;}
+.btn-admin{padding:10px 20px;background:var(--crimson);color:white;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-admin:hover{background:var(--crimson-light);}
+.btn-admin-outline{padding:10px 20px;background:transparent;color:var(--crimson);border:1.5px solid var(--crimson);border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-admin-outline:hover{background:var(--crimson);color:white;}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 24px 0;}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:48px;}
+.footer-brand .logo-text{color:var(--gold-light);font-family:'Playfair Display',serif;font-size:24px;font-weight:700;}
+.footer-brand p{font-size:14px;line-height:1.7;margin-top:14px;color:rgba(255,255,255,.5);}
+.footer-social{display:flex;gap:12px;margin-top:20px;}
+.social-btn{width:38px;height:38px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .3s;text-decoration:none;}
+.social-btn:hover{background:var(--gold);transform:translateY(-3px);}
+.footer-col h4{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold-light);margin-bottom:16px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{color:rgba(255,255,255,.5);text-decoration:none;font-size:14px;transition:color .3s;}
+.footer-col ul li a:hover{color:var(--gold-light);}
+.footer-newsletter input{width:100%;padding:10px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;color:white;font-size:14px;margin-bottom:10px;}
+.footer-newsletter input:focus{outline:none;border-color:var(--gold);}
+.footer-newsletter button{width:100%;padding:10px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--dark);border:none;border-radius:8px;font-weight:700;cursor:pointer;font-size:13px;}
+.footer-bottom{max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08);padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:13px;color:rgba(255,255,255,.4);}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr;}}
+
+/* ── WHATSAPP ── */
+.whatsapp-btn{position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 6px 24px rgba(37,211,102,.4);text-decoration:none;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.4)}50%{box-shadow:0 6px 40px rgba(37,211,102,.7)}}
+.whatsapp-btn:hover{transform:scale(1.1);}
+
+/* ── TRUST BADGES ── */
+.trust-bar{background:white;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:20px 24px;}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:20px;}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text-light);font-weight:700;}
+.trust-item span{font-size:22px;}
+
+/* ── NOTIFICATION ── */
+.notification{position:fixed;bottom:90px;right:28px;background:white;border-radius:12px;padding:14px 18px;box-shadow:0 8px 32px rgba(0,0,0,.15);border-left:4px solid var(--gold);z-index:998;font-size:13px;max-width:260px;transform:translateX(300px);transition:transform .4s ease;display:flex;align-items:flex-start;gap:10px;}
+.notification.show{transform:translateX(0);}
+.notification-icon{font-size:20px;}
+.notification-text{line-height:1.4;}
+
+/* ── PROFILE MODAL ── */
+.profile-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:3000;align-items:center;justify-content:center;padding:20px;}
+.profile-modal.open{display:flex;}
+.profile-detail{background:white;border-radius:24px;width:100%;max-width:680px;max-height:90vh;overflow-y:auto;}
+.profile-detail-header{background:linear-gradient(135deg,var(--crimson),#C0392B);padding:32px;border-radius:24px 24px 0 0;display:flex;align-items:center;gap:24px;position:relative;}
+.profile-detail-avatar{width:90px;height:90px;border-radius:50%;border:3px solid rgba(255,255,255,.4);object-fit:cover;}
+.profile-detail-name{font-family:'Playfair Display',serif;font-size:24px;color:white;font-weight:600;}
+.profile-detail-sub{font-size:14px;color:rgba(255,255,255,.7);margin-top:4px;}
+.profile-close{position:absolute;top:16px;right:16px;width:34px;height:34px;background:rgba(255,255,255,.2);border:none;border-radius:50%;color:white;font-size:18px;cursor:pointer;}
+.profile-detail-body{padding:32px;}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
+.detail-item{background:var(--gold-pale);border-radius:10px;padding:14px 16px;border:1px solid var(--border);}
+.detail-item label{font-size:11px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;display:block;margin-bottom:4px;}
+.detail-item span{font-size:14px;color:var(--dark);font-weight:600;}
+.profile-actions-bar{display:flex;gap:12px;margin-top:24px;}
+.btn-connect{flex:1;padding:13px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;}
+.btn-shortlist{flex:1;padding:13px;background:transparent;color:var(--gold);border:2px solid var(--gold);border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-shortlist:hover{background:var(--gold);color:white;}
+
+/* ── PAYMENT MODAL ── */
+.payment-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:3001;align-items:center;justify-content:center;padding:20px;}
+.payment-modal.open{display:flex;}
+.payment-container{background:white;border-radius:24px;width:100%;max-width:800px;max-height:90vh;overflow-y:auto;position:relative;animation:modalIn .3s ease;}
+.payment-header{background:linear-gradient(135deg,var(--crimson),#C0392B);padding:32px;border-radius:24px 24px 0 0;color:white;position:relative;}
+.payment-header h2{font-family:'Playfair Display',serif;font-size:28px;margin:0;margin-bottom:8px;}
+.payment-close{position:absolute;top:20px;right:20px;width:36px;height:36px;background:rgba(255,255,255,.2);border:none;border-radius:50%;color:white;font-size:20px;cursor:pointer;}
+.payment-body{padding:40px;}
+.payment-info{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:32px;}
+.payment-details{background:var(--gold-pale);border-radius:16px;padding:24px;border:2px solid #e0d2b8;}
+.payment-details h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--crimson);margin-bottom:20px;}
+.bank-detail{margin-bottom:18px;}
+.bank-detail label{display:block;font-size:11px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;}
+.bank-detail-value{font-size:14px;font-weight:700;color:var(--dark);background:white;padding:10px 12px;border-radius:8px;border:1px solid #d0c5b5;word-break:break-all;font-family:monospace;}
+.copy-btn{background:var(--crimson);color:white;border:none;border-radius:6px;padding:6px 12px;font-size:11px;font-weight:700;cursor:pointer;margin-left:8px;transition:all .3s;}
+.copy-btn:hover{background:var(--crimson-light);}
+.payment-scanner{background:white;border-radius:16px;padding:24px;border:2px solid #e0d2b8;text-align:center;}
+.payment-scanner h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--crimson);margin-bottom:20px;}
+.qr-code{width:220px;height:220px;background:linear-gradient(135deg,#f0f0f0,#e8e8e8);border-radius:12px;margin:0 auto 16px;border:2px solid #d0c5b5;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text-light);}
+.payment-package-info{background:var(--gold-pale);border-radius:16px;padding:20px;margin-bottom:24px;border-left:4px solid var(--gold);}
+.package-price-display{display:flex;justify-content:space-between;align-items:center;}
+.package-price-display .package-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--crimson);}
+.package-price-display .price-amount{font-size:28px;font-weight:700;color:var(--gold);}
+.payment-methods{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;}
+.payment-method{padding:14px;border:2px solid #e0d2b8;border-radius:10px;text-align:center;cursor:pointer;transition:all .3s;}
+.payment-method:hover{border-color:var(--gold);background:var(--gold-pale);}
+.payment-method.active{border-color:var(--crimson);background:linear-gradient(135deg,rgba(201,168,76,.1),rgba(139,26,26,.05));}
+.payment-method-icon{font-size:24px;margin-bottom:6px;}
+.payment-method-name{font-size:12px;font-weight:700;color:var(--dark);}
+.payment-instructions{background:linear-gradient(135deg,#E8F4F8,#D0E8F0);border-radius:12px;padding:16px;border-left:4px solid #0099CC;margin-bottom:24px;}
+.payment-instructions h4{font-size:13px;font-weight:700;color:#0066AA;margin:0 0 10px 0;}
+.payment-instructions ol{margin:0;padding-left:18px;font-size:13px;color:var(--text);line-height:1.6;}
+.payment-instructions li{margin-bottom:6px;}
+.payment-buttons{display:flex;gap:12px;}
+.btn-pay{flex:1;padding:14px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-pay:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,26,26,.3);}
+.btn-cancel{flex:1;padding:14px;background:transparent;color:var(--crimson);border:2px solid var(--crimson);border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-cancel:hover{background:var(--crimson);color:white;}
+
+/* ── RESPONSIVE FIXES ── */
+@media(max-width:768px){
+  .nav-inner,
+  .hero-content,
+  section,
+  .search-section,
+  .trust-bar,
+  footer{padding-left:16px;padding-right:16px;}
+
+  .profiles-grid{grid-template-columns:1fr;}
+  .profile-actions{flex-direction:column;}
+
+  .hero-glow{width:min(90vw,420px);height:min(90vw,420px);}
+  .story-couple{align-items:flex-start;}
+
+  .payment-info,
+  .payment-methods,
+  .package-price-display,
+  .payment-buttons,
+  .detail-grid{grid-template-columns:1fr;display:grid;}
+}
+
+/* ── ANIMATION UTILITIES ── */
+.fade-up{opacity:0;transform:translateY(30px);transition:all .7s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* ── PAYMENT MODAL ── */
+.payment-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:3001;align-items:center;justify-content:center;padding:20px;}
+.payment-modal.open{display:flex;}
+.payment-container{background:white;border-radius:24px;width:100%;max-width:800px;max-height:90vh;overflow-y:auto;position:relative;animation:modalIn .3s ease;}
+.payment-header{background:linear-gradient(135deg,var(--crimson),#C0392B);padding:32px;border-radius:24px 24px 0 0;color:white;position:relative;}
+.payment-header h2{font-family:'Playfair Display',serif;font-size:28px;margin:0;margin-bottom:8px;}
+.payment-close{position:absolute;top:20px;right:20px;width:36px;height:36px;background:rgba(255,255,255,.2);border:none;border-radius:50%;color:white;font-size:20px;cursor:pointer;}
+.payment-body{padding:40px;}
+.payment-info{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:32px;}
+.payment-details{background:var(--gold-pale);border-radius:16px;padding:24px;border:2px solid #e0d2b8;}
+.payment-details h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--crimson);margin-bottom:20px;}
+.bank-detail{margin-bottom:18px;}
+.bank-detail label{display:block;font-size:11px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;}
+.bank-detail-value{font-size:14px;font-weight:700;color:var(--dark);background:white;padding:10px 12px;border-radius:8px;border:1px solid #d0c5b5;word-break:break-all;font-family:monospace;}
+.copy-btn{background:var(--crimson);color:white;border:none;border-radius:6px;padding:6px 12px;font-size:11px;font-weight:700;cursor:pointer;margin-left:8px;transition:all .3s;}
+.copy-btn:hover{background:var(--crimson-light);}
+.payment-scanner{background:white;border-radius:16px;padding:24px;border:2px solid #e0d2b8;text-align:center;}
+.payment-scanner h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--crimson);margin-bottom:20px;}
+.qr-code{width:220px;height:220px;background:linear-gradient(135deg,#f0f0f0,#e8e8e8);border-radius:12px;margin:0 auto 16px;border:2px solid #d0c5b5;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text-light);}
+.payment-package-info{background:var(--gold-pale);border-radius:16px;padding:20px;margin-bottom:24px;border-left:4px solid var(--gold);}
+.package-price-display{display:flex;justify-content:space-between;align-items:center;}
+.package-price-display .package-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--crimson);}
+.package-price-display .price-amount{font-size:28px;font-weight:700;color:var(--gold);}
+.payment-methods{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;}
+.payment-method{padding:14px;border:2px solid #e0d2b8;border-radius:10px;text-align:center;cursor:pointer;transition:all .3s;}
+.payment-method:hover{border-color:var(--gold);background:var(--gold-pale);}
+.payment-method.active{border-color:var(--crimson);background:linear-gradient(135deg,rgba(201,168,76,.1),rgba(139,26,26,.05));}
+.payment-method-icon{font-size:24px;margin-bottom:6px;}
+.payment-method-name{font-size:12px;font-weight:700;color:var(--dark);}
+.payment-instructions{background:linear-gradient(135deg,#E8F4F8,#D0E8F0);border-radius:12px;padding:16px;border-left:4px solid #0099CC;margin-bottom:24px;}
+.payment-instructions h4{font-size:13px;font-weight:700;color:#0066AA;margin:0 0 10px 0;}
+.payment-instructions ol{margin:0;padding-left:18px;font-size:13px;color:var(--text);line-height:1.6;}
+.payment-instructions li{margin-bottom:6px;}
+.payment-buttons{display:flex;gap:12px;}
+.btn-pay{flex:1;padding:14px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));color:white;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-pay:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,26,26,.3);}
+.btn-cancel{flex:1;padding:14px;background:transparent;color:var(--crimson);border:2px solid var(--crimson);border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;}
+.btn-cancel:hover{background:var(--crimson);color:white;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon"><img src="file:///c:/Users/HP/Downloads/esha.jpg" alt="Esha Matrimony Logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+      <div class="logo-text">Esha <span>Matrimony</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#packages">Package Details</a></li>
+      <li><a href="#profiles-section">Profiles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn-outline" onclick="openModal('login'); return false;">Login</a>
+      <a href="#" class="btn-primary" onclick="openModal('register'); return false;">Register Free</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="toggleMobile()">🏠 Home</a>
+  <a href="#about" onclick="toggleMobile()">ℹ️ About Us</a>
+  <a href="#services" onclick="toggleMobile()">⭐ Services</a>
+  <a href="#profiles-section" onclick="toggleMobile()">👥 Profiles</a>
+  <a href="#contact" onclick="toggleMobile()">📞 Contact</a>
+  <div class="mob-btns">
+    <a href="#" class="btn-outline" onclick="openModal('login')">Login</a>
+    <a href="#" class="btn-primary" onclick="openModal('register')">Register Free</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">✨ India's Trusted Matrimony Service</div>
+      <h1 class="hero-title">Find Your <span class="accent">Perfect</span> Life Partner</h1>
+      <p class="hero-subtitle">Begin your beautiful journey together. Thousands of verified, genuine profiles from across India @ Abroad  await you. Your happiness is our mission.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-gold" onclick="openModal('register'); return false;">Register Free Today</a>
+        <a href="#profiles-section" class="btn-ghost">Browse Profiles</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">15K+</div>
+          <div class="stat-label">Active Profiles</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3K+</div>
+          <div class="stat-label">Marriages</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">98%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card-stack">
+        <div class="hero-card hero-card-back"></div>
+        <div class="hero-card hero-card-main">
+          <div class="couple-img"><img src="file:///c:/Users/HP/Downloads/keerthana.jpg" alt="keerthana"></div>
+          <div class="hero-profile-name">keerthana vaddadi</div>
+          <div class="hero-profile-detail">28 yrs · Software proffesional · united kingdome</div>
+          <div class="hero-profile-detail">Hindu · reddy · Telugu</div>
+          <div class="hero-match-badge">⭐ Premium Profile</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-section">
+  <div class="search-inner">
+    <div class="search-title">🔍 Search Your Ideal Partner</div>
+    <div class="search-form">
+      <div class="search-field">
+        <label>Looking For</label>
+        <select><option>Bride</option><option>Groom</option></select>
+      </div>
+      <div class="search-field">
+        <label>Age Range</label>
+        <select><option>18–25</option><option>26–30</option><option>31–35</option><option>36–40</option><option>40+</option></select>
+      </div>
+      <div class="search-field">
+        <label>Religion</label>
+        <select><option>Hindu</option><option>Muslim</option><option>Christian</option><option>Sikh</option><option>Any</option></select>
+      </div>
+      <div class="search-field">
+        <label>Caste</label>
+        <select><option>Any</option><option>Brahmin</option><option>Kshatriya</option><option>Vysya</option><option>Kamma</option><option>Reddy</option><option>Kapu</option></select>
+      </div>
+      <div class="search-field">
+        <label>Location</label>
+        <select><option>Any</option><option>Hyderabad</option><option>Vijayawada</option><option>Nellore</option><option>Vizag</option><option>Chennai</option><option>Bangalore</option></select>
+      </div>
+      <div class="search-field">
+        <button class="btn-search" onclick="showSearchResults()">Search Now →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>🔐</span> 100% Verified Profiles</div>
+    <div class="trust-item"><span>🛡️</span> Privacy Protected</div>
+    <div class="trust-item"><span>💎</span> Premium Matchmaking</div>
+    <div class="trust-item"><span>📞</span> Dedicated Support</div>
+    <div class="trust-item"><span>💑</span> 4000+ Happy Couples</div>
+  </div>
+</div>
+
+<!-- FEATURED PROFILES -->
+<section id="profiles-section">
+  <div class="section-inner">
+    <div class="centered fade-up">
+      <span class="section-label">Our Members</span>
+      <h2 class="section-title">Featured Profiles</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Discover genuine, verified profiles from families looking for the perfect match</p>
+    </div>
+    <div class="profiles-grid" id="profilesGrid">
+      <!-- Profiles injected by JS -->
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#" class="btn-primary" style="padding:14px 36px;font-size:15px;" onclick="openModal('register');return false;">View All Profiles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-up">
+        <div class="about-img-bg"><img src="file:///c:/Users/HP/Downloads/marrige.jpg" alt="Marriage" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="about-float">
+          <div class="about-float-num"> 7+ </div>
+          <div class="about-float-text">Years of trusted service</div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">A Legacy of Trust &amp; Happy Unions</h2>
+        <div class="divider"></div>
+        <p style="font-size:15px;color:var(--text-light);line-height:1.8;margin-bottom:24px;">Esha Matrimony has been connecting hearts and families since 2019. We believe every person deserves a loving, compatible life partner — and we work tirelessly to make that happen. Our team personally verifies every profile, ensuring authenticity and safety for all our members.</p>
+        <p style="font-size:15px;color:var(--text-light);line-height:1.8;margin-bottom:32px;">We serve communities across Andhra Pradesh, Telangana, Tamil Nadu,and abroad and beyond — with a deep understanding of Indian family values, traditions, and the importance of compatibility.</p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">✅</div>
+            <div class="feature-text"><h4>Verified Profiles</h4><p>Every profile is manually verified for authenticity</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-text"><h4>Secure & Private</h4><p>Your data is protected with enterprise-grade security</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💑</div>
+            <div class="feature-text"><h4>Smart Matching</h4><p>AI-powered compatibility suggestions</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📞</div>
+            <div class="feature-text"><h4>Personal Support</h4><p>Dedicated relationship managers available</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="centered fade-up">
+      <span class="section-label" style="color:var(--gold);">What We Offer</span>
+      <h2 class="section-title">Our Premium Services</h2>
+      <div class="divider" style="margin:20px auto;"></div>
+      <p class="section-subtitle">Everything you need to find your perfect partner</p>
+    </div>
+    <div class="services-grid" style="margin-top:48px;">
+      <div class="service-card fade-up">
+        <span class="service-icon">👤</span>
+        <h3>Free Profile Creation</h3>
+        <p>Create a detailed, attractive profile highlighting your personality, education, family background, and preferences with photos.</p>
+        <span class="card-badge">Free Forever</span>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🔍</span>
+        <h3>Advanced Search & Filter</h3>
+        <p>Filter thousands of profiles by age, caste, religion, education, profession, location, and dozens of other criteria.</p>
+        <span class="card-badge">Smart Filters</span>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">💌</span>
+        <h3>Express Interest</h3>
+        <p>Send personalized interest messages directly to profiles you like. Get notified instantly when someone shows interest in you.</p>
+        <span class="card-badge">Instant Connect</span>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">⭐</span>
+        <h3>Premium Membership</h3>
+        <p>Unlock unlimited contacts, premium profile boosts, priority placement, and exclusive access to premium member profiles.</p>
+        <span class="card-badge">Best Value</span>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🤝</span>
+        <h3>Assisted Matchmaking</h3>
+        <p>Our relationship experts personally curate and present handpicked profiles based on your unique preferences and horoscope.</p>
+        <span class="card-badge">Personal Touch</span>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon">🔐</span>
+        <h3>Horoscope Matching</h3>
+        <p>Traditional Jathakam / Kundali matching integrated with modern compatibility analysis for complete peace of mind.</p>
+        <span class="card-badge">Traditional Values</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGE DETAILS -->
+<section id="packages">
+  <div class="section-inner">
+    <div class="centered fade-up">
+      <span class="section-label">Membership Plans</span>
+      <h2 class="section-title">Package Details</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Choose the perfect plan for your matrimonial journey</p>
+    </div>
+    <div class="packages-grid">
+      <div class="package-card fade-up">
+        <div class="package-header">
+          <h3>BRONZE PACK</h3>
+          <div class="price">₹7999</div>
+        </div>
+        <ul class="package-features">
+          <li>Valid upto 3 month's</li>
+          <li>Weekly 4 profile's</li>
+          <li>Confidential service</li>
+          <li>Provide relationship manager</li>
+          <li>Verified matches with photos</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="openPaymentModal('BRONZE PACK', '₹7,999');return false;">Choose Plan</a>
+      </div>
+      <div class="package-card fade-up">
+        <div class="package-header">
+          <h3>SILVER PACKAGE</h3>
+          <div class="price">₹13999</div>
+        </div>
+        <ul class="package-features">
+          <li>Validity upto 6 month's</li>
+          <li>Weekly 5(or)6 profile's</li>
+          <li>Provide relationship manager</li>
+          <li>View full profile information</li>
+          <li>Unlimited horoscope</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="openPaymentModal('SILVER PACKAGE', '₹13,999');return false;">Choose Plan</a>
+      </div>
+      <div class="package-card featured fade-up">
+        <div class="package-header">
+          <h3>GOLD PACKAGE</h3>
+          <div class="price">₹19999</div>
+        </div>
+        <ul class="package-features">
+          <li>12 month's package</li>
+          <li>Unlimited profile's</li>
+          <li>Day by day matches & updates</li>
+          <li>Access verified profiles & pics</li>
+          <li>Strictly privacy and confidential ensured throughout the service</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="openPaymentModal('GOLD PACKAGE', '₹19,999');return false;">Choose Plan</a>
+      </div>
+      <div class="package-card fade-up">
+        <div class="package-header">
+          <h3>DIAMOND PACKAGE</h3>
+          <div class="price">₹27999</div>
+        </div>
+        <ul class="package-features">
+          <li>Valid upto settlement</li>
+          <li>High success rate</li>
+          <li>Personally verified with bride's day by matches and updates</li>
+          <li>Increased chances of finding the right match through all our group</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="openPaymentModal('DIAMOND PACKAGE', '₹27,999');return false;">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section id="success">
+  <div class="section-inner">
+    <div class="centered fade-up">
+      <span class="section-label">Love Stories</span>
+      <h2 class="section-title">Success Stories</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Real couples who found their soulmates through Esha Matrimony</p>
+    </div>
+    <div class="stories-grid">
+      <div class="story-card fade-up">
+        <div class="story-couple">
+          <div class="couple-avatars">
+            <div class="avatar" style="background:transparent;border:none;"><img src="file:///c:/Users/HP/Downloads/harsha.jpg" alt="Harsha" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+            <div class="avatar" style="background:transparent;border:none;"><img src="file:///c:/Users/HP/Downloads/navya.jpg" alt="Navya sri" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+          </div>
+          <div class="heart-icon">❤️</div>
+          <div>
+            <div class="story-names">Harsha & Navya sri</div>
+            <div class="story-date">Married: January 2024</div>
+          </div>
+        </div>
+        <p class="story-text">"We never imagined we'd find our perfect match online, but Esha Matrimony made it feel so personal and safe. Within 3 months of registering, Harsha and I were talking every day. The profiles were so detailed and honest!"</p>
+        <div class="story-stars">★★★★★</div>
+        <div class="story-location">📍 Vijayawada, Andhra Pradesh</div>
+      </div>
+      <div class="story-card fade-up">
+        <div class="story-couple">
+          <div class="couple-avatars">
+            <div class="avatar" style="background:transparent;border:none;"><img src="file:///c:/Users/HP/Downloads/sravan.jpg" alt="Sravan" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+            <div class="avatar" style="background:transparent;border:none;"><img src="file:///c:/Users/HP/Downloads/priya.jpg" alt="Priya" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+          </div>
+          <div class="heart-icon">❤️</div>
+          <div>
+            <div class="story-names">sravan & priya</div>
+            <div class="story-date">Married: april 2025</div>
+          </div>
+        </div>
+        <p class="story-text">"The team at Esha Matrimony went above and beyond. They understood exactly what our families were looking for. Their assisted matchmaking service is worth every rupee. Truly a blessing!"</p>
+        <div class="story-stars">★★★★★</div>
+        <div class="story-location">📍 Hyderabad, Telangana</div>
+      </div>
+      <div class="story-card fade-up">
+        <div class="story-couple">
+          <div class="couple-avatars">
+            <div class="avatar" style="background:transparent;border:none;"><img src="file:///c:/Users/HP/Downloads/surya.jpg" alt="Surya" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+            <div class="avatar" style="background:transparent;border:none;"><img src="file:///c:/Users/HP/Downloads/vinitha.jpg" alt="Vinitha" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+          </div>
+          <div class="heart-icon">❤️</div>
+          <div>
+            <div class="story-names">Surya & Vinitha</div>
+            <div class="story-date">Married: april 2025</div>
+          </div>
+        </div>
+        <p class="story-text">"The team at Esha Matrimony is very supportive, understanding specific needs and providing tailored matches. Finally found the perfect match through Esha Matrimony. Highly recommended for their professional approach!"</p>
+        <div class="story-stars">★★★★★</div>
+        <div class="story-location">📍 Nalgonda, Telangana</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="centered fade-up">
+      <span class="section-label">What They Say</span>
+      <h2 class="section-title">Member Testimonials</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Esha Matrimony's search filters are exceptional. I could filter by gotra, native place, and even salary range. Found exactly what my parents and I were looking for.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div><div class="testi-name">Suresh Varma</div><div class="testi-role">Software Engineer, Bangalore</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The relationship manager assigned to us was incredibly helpful and understanding. She took time to understand our family values and presented only relevant profiles. Highly recommend!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">L</div>
+          <div><div class="testi-name"> Pravallika </div><div class="testi-role">Teacher, Nellore</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Very trustworthy platform. My daughter found a wonderful partner through Esha Matrimony. The whole experience — from registration to the wedding — was smooth and joyful.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div><div class="testi-name">Ramaiah Garu</div><div class="testi-role">Parent, Vijayawada</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="fade-up">
+      <span class="section-label">Reach Us</span>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">We're here to help you find your perfect match. Reach out anytime.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Our Office</h4>
+            <p>24-2-40/15B, Sri Durga Nagar, Near Anna Canteen<br>Tirupati – 517 501<br>Andhra Pradesh, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone / WhatsApp</h4>
+            <a href="tel:+916301414936 ">+91 6301414936</a><br>
+            <a href="tel:+91 8074629398">+91 8074629398</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:eshamatrimony11@gmail.com">eshamatrimony11@gmail.com</a><br>
+            <a href="mailto:support@eshamatrimony.in">support@eshamatrimony.in</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 10:00 AM – 6:00 PM<br>Sunday: holiday
+          </div>
+        </div>
+      </div>
+      <div class="contact-form fade-up">
+        <div class="form-title">Send Us a Message 💌</div>
+        <div class="form-row">
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-group">
+          <label>Enquiry Type</label>
+          <select>
+            <option>General Enquiry</option>
+            <option>Profile Registration</option>
+            <option>Premium Membership</option>
+            <option>Assisted Matchmaking</option>
+            <option>Technical Support</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Tell us how we can help you..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm()">Send Message 🚀</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section id="admin">
+  <div class="section-inner">
+    <div class="fade-up">
+      <span class="section-label">Admin Dashboard</span>
+      <h2 class="section-title">Management Panel</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="admin-grid fade-up">
+      <div class="admin-stat">
+        <div class="admin-stat-num" id="totalProfiles">17,248</div>
+        <div class="admin-stat-label">Total Profiles</div>
+      </div>
+      <div class="admin-stat">
+        <div class="admin-stat-num" id="activeMembers">10,932</div>
+        <div class="admin-stat-label">Active Members</div>
+      </div>
+      <div class="admin-stat">
+        <div class="admin-stat-num" id="pendingVerify">71</div>
+        <div class="admin-stat-label">Pending Verification</div>
+      </div>
+      <div class="admin-stat">
+        <div class="admin-stat-num" id="successCount">4,104</div>
+        <div class="admin-stat-label">Successful Matches</div>
+      </div>
+      <div class="admin-stat">
+        <div class="admin-stat-num" id="todayReg">43</div>
+        <div class="admin-stat-label">Today's Registrations</div>
+      </div>
+    </div>
+    <div class="admin-actions fade-up">
+      <button class="btn-admin" onclick="adminAction('View All Profiles')">👥 View All Profiles</button>
+      <button class="btn-admin" onclick="adminAction('Approve Pending')">✅ Approve Pending</button>
+      <button class="btn-admin" onclick="adminAction('Send Notifications')">📢 Send Notifications</button>
+      <button class="btn-admin-outline" onclick="adminAction('Export Data')">📊 Export Data</button>
+      <button class="btn-admin-outline" onclick="adminAction('Manage Premium')">⭐ Manage Premium</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo-text">💍 Esha Matrimony</div>
+      <p>Connecting hearts and building families since 2019. Your trusted partner in finding life-long happiness and meaningful relationships across India and abroad also.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn">📘</a>
+        <a href="#" class="social-btn">📸</a>
+        <a href="#" class="social-btn">🐦</a>
+        <a href="#" class="social-btn">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#profiles-section">Browse Profiles</a></li>
+        <li><a href="#success">Success Stories</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Free Registration</a></li>
+        <li><a href="#">Premium Membership</a></li>
+        <li><a href="#">Assisted Matchmaking</a></li>
+        <li><a href="#">Horoscope Matching</a></li>
+        <li><a href="#">Privacy Controls</a></li>
+        <li><a href="#">Support Centre</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,.5);margin-bottom:14px;line-height:1.6;">Subscribe for matrimony tips, success stories, and special offers.</p>
+      <div class="footer-newsletter">
+        <input type="email" placeholder="Your email address">
+        <button onclick="subscribeNewsletter()">Subscribe Now →</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Esha Matrimony. All rights reserved.</p>
+    <p><a href="#" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 8px;">Privacy Policy</a> · <a href="#" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 8px;">Terms of Service</a> · <a href="#" style="color:rgba(255,255,255,.4);text-decoration:none;">Cookie Policy</a></p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/918074629398?text=Hello%20Esha%20Matrimony%2C%20I%20need%20information%20about%20your%20services." class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+
+<!-- NOTIFICATION -->
+<div class="notification" id="notification">
+  <div class="notification-icon">💑</div>
+  <div class="notification-text"><strong>New Match Alert!</strong><br>5 new profiles match your preferences</div>
+</div>
+
+<!-- REGISTER/LOGIN MODAL -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">Join Esha Matrimony</h2>
+      <p id="modalSubtitle">Create your free profile in minutes</p>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tabs">
+        <button class="modal-tab active" onclick="switchTab('register')">Register</button>
+        <button class="modal-tab" onclick="switchTab('login')">Login</button>
+      </div>
+      <div class="tab-content active" id="tab-register">
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="First name"></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last name"></div>
+        </div>
+        <div class="form-group">
+          <label>Profile For</label>
+          <select><option>Myself</option><option>Son</option><option>Daughter</option><option>Brother</option><option>Sister</option></select>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Date of Birth</label><input type="date"></div>
+          <div class="form-group"><label>Religion</label><select><option>Hindu</option><option>Muslim</option><option>Christian</option><option>Sikh</option></select></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Caste</label><input type="text" placeholder="Enter caste"></div>
+          <div class="form-group"><label>Mother Tongue</label><select><option>Telugu</option><option>Tamil</option><option>Hindi</option><option>Kannada</option><option>Malayalam</option></select></div>
+        </div>
+        <div class="form-group"><label>Education</label><select><option>B.Tech / BE</option><option>MBA</option><option>MBBS / MD</option><option>B.Sc</option><option>BA</option><option>Other</option></select></div>
+        <div class="form-group"><label>Profession</label><input type="text" placeholder="e.g. Software Engineer at Infosys"></div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        </div>
+        <div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password"></div>
+        <div class="form-group"><label>Location</label><input type="text" placeholder="City, State"></div>
+        <button class="btn-submit" onclick="handleRegister()">🎉 Create My Profile Free</button>
+        <p style="text-align:center;font-size:12px;color:var(--text-light);margin-top:14px;">By registering, you agree to our <a href="#" style="color:var(--crimson);">Terms</a> and <a href="#" style="color:var(--crimson);">Privacy Policy</a></p>
+      </div>
+      <div class="tab-content" id="tab-login">
+        <div class="form-group"><label>Email / Phone</label><input type="text" placeholder="Enter your email or phone"></div>
+        <div class="form-group"><label>Password</label><input type="password" placeholder="Enter your password"></div>
+        <button class="btn-submit" onclick="handleLogin()">🔐 Login to My Account</button>
+        <p style="text-align:center;font-size:13px;margin-top:16px;"><a href="#" style="color:var(--crimson);">Forgot Password?</a></p>
+        <p style="text-align:center;font-size:13px;color:var(--text-light);margin-top:8px;">Don't have an account? <a href="#" style="color:var(--crimson);" onclick="switchTab('register')">Register Free</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE DETAIL MODAL -->
+<div class="profile-modal" id="profileModal">
+  <div class="profile-detail">
+    <div class="profile-detail-header">
+      <img class="profile-detail-avatar" id="pdAvatar" alt="Profile">
+      <div>
+       <div class="profile-detail-name" id="pdName">Keerthana Vaddadi</div>
+<div class="profile-detail-sub" id="pdSub">28 years · United Kingdom (UK)</div>
+
+<ul>
+  
+  
+</ul>
+      </div>
+      <button class="profile-close" onclick="closeProfileModal()">×</button>
+    </div>
+    <div class="profile-detail-body">
+      <div class="detail-grid" id="pdDetails"></div>
+      <div class="profile-actions-bar">
+        <button class="btn-connect" onclick="sendInterest()">💌 Send Interest</button>
+        <button class="btn-shortlist" onclick="shortlist()">⭐ Shortlist</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="payment-modal" id="paymentModal">
+  <div class="payment-container">
+    <div class="payment-header">
+      <h2>Complete Your Payment</h2>
+      <p id="paymentSubtitle" style="margin:0;color:rgba(255,255,255,.8);font-size:14px;">Secure payment for premium membership</p>
+      <button class="payment-close" onclick="closePaymentModal()">×</button>
+    </div>
+    <div class="payment-body">
+      <div class="payment-package-info">
+        <div class="package-price-display">
+          <div class="package-name" id="selectedPackage">Gold Package</div>
+          <div class="price-amount" id="selectedPrice">₹19,999</div>
+        </div>
+      </div>
+
+      <div class="payment-methods">
+        <div class="payment-method active" onclick="selectPaymentMethod(this, 'bank')"><div class="payment-method-icon">🏦</div><div class="payment-method-name">Bank Transfer</div></div>
+        <div class="payment-method" onclick="selectPaymentMethod(this, 'upi')"><div class="payment-method-icon">📱</div><div class="payment-method-name">UPI Payment</div></div>
+      </div>
+
+      <div class="payment-info">
+        <div class="payment-details" id="bankDetailsSection">
+          <h3>🏦 Bank Transfer Details</h3>
+          <div class="bank-detail">
+            <label>Account Holder Name</label>
+            <div class="bank-detail-value">Esha Matrimony Services Pvt Ltd</div>
+          </div>
+          <div class="bank-detail">
+            <label>Bank Name</label>
+            <div class="bank-detail-value">ICICI Bank Limited</div>
+          </div>
+          <div class="bank-detail">
+            <label>Account Number</label>
+            <div class="bank-detail-value">1234567890123456 <button class="copy-btn" onclick="copyToClipboard('1234567890123456')">Copy</button></div>
+          </div>
+          <div class="bank-detail">
+            <label>IFSC Code</label>
+            <div class="bank-detail-value">ICIC0000001 <button class="copy-btn" onclick="copyToClipboard('ICIC0000001')">Copy</button></div>
+          </div>
+          <div class="bank-detail">
+            <label>Swift Code</label>
+            <div class="bank-detail-value">ICICICNXXX</div>
+          </div>
+        </div>
+
+        <div class="payment-scanner" id="upiSection" style="display:none;">
+          <h3>📱 UPI Payment</h3>
+          <div class="qr-code">📲 UPI QR Code</div>
+          <p style="font-size:13px;color:var(--text-light);margin:0;">Scan with Google Pay, PhonePe, or BHIM</p>
+          <p style="font-size:13px;color:var(--text-light);margin:10px 0 0 0;"><strong>UPI ID:</strong> eshamatrimony@icici</p>
+        </div>
+
+        <div class="payment-scanner">
+          <h3>✅ Payment Confirmation</h3>
+          <div class="qr-code" style="background:linear-gradient(135deg,var(--gold-pale),#FFF9E6);border-color:var(--gold);">📊 Payment Scanner<br><span style="font-size:12px;margin-top:8px;display:block;">Upload receipt here</span></div>
+        </div>
+      </div>
+
+      <div class="payment-instructions">
+        <h4>📋 Payment Instructions:</h4>
+        <ol>
+          <li>Select your preferred payment method (Bank Transfer or UPI)</li>
+          <li>For Bank Transfer: Use the details provided to transfer from your bank account</li>
+          <li>For UPI: Scan the QR code or use the UPI ID with any UPI app</li>
+          <li>After payment, upload the transaction receipt for our team verification</li>
+          <li>Your membership will be activated within 1 hour of payment confirmation</li>
+        </ol>
+      </div>
+
+      <div class="payment-buttons">
+        <button class="btn-pay" onclick="processPayment()">💳 Confirm & Continue</button>
+        <button class="btn-cancel" onclick="closePaymentModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── PROFILES DATA
+const profiles = [
+  {emoji:'👰',image:"keerthana.jpg",name:'Keerthana vaddadi',age:28,loc:'united kingdom',edu:'masters',job:'Software proffesional',religion:'Hindu',caste:'reddy',height:'5\'3"',income:'GBP 40,000 - 50,000',new:true,verified:true},
+  {emoji:'🤵',image:"harshith.jpg",name:'Harshith Kumar',age:28,loc:'Bengaluru',edu:'B.Com',job:'Sales Manager',religion:'Hindu',caste:'Mudhiraj',height:'5\'7"',income:'₹8 - 9 LPA',new:false,verified:true},
+  {emoji:'👰',image:"rashmitha.jpg",name:'Rashmitha Mulpuri',age:26,loc:'Hyderabad, Telangana',edu:'MBA',job:'HR Generalist',religion:'Hindu',caste:'Kamma',height:'5\'8"',income:'Not specified',new:true,verified:true},
+  {emoji:'🤵',image:"pavan gujjari.jfif",name:'Pavan Gujjari',age:29,loc:'Sangareddy',edu:'B.Tech',job:'Software Professional',religion:'Hindu',caste:'Padmashali',height:'5\'7"',income:'₹20 LPA',new:false,verified:true},
+  {emoji:'👰',image:"nithya.jpg",name:'Nithyashri Ramesh',age:21,loc:'Chennai',edu:'BCA',job:'Software Professional',religion:'Hindu',caste:'Balija-Naidu',height:'5\'1"',income:'₹4 - 7 LPA',new:true,verified:true},
+    {emoji:'👰',image:"supriya.jpg",name:'Kopparapu Venkata Sai Supriya',age:26,loc:'Hyderabad',edu:'B.Tech (CSE)',job:'Associate Software Engineer',religion:'Hindu',caste:'Arya Vysya',height:'5\'9"',income:'₹20 LPA',new:true,verified:true},
+  {emoji:'🤵',image:"vijay.jpg",name:'Vijay Rao Gandra',age:29,loc:'Canada',edu:'B.Tech Civil',job:'Order Support',religion:'Hindu',caste:'Velama',height:'5\'11"',income:'₹36 LPA',new:false,verified:true},
+  {emoji:'👰',image:"ramya.jpg",name:'Ramya Reddy Ganupati',age:30,loc:'Jangon, Telangana',edu:'MSC',job:'Software Engineer at Walmart',religion:'Hindu',caste:'Reddy',height:'5\'3"',income:'₹133k per annum',new:true,verified:true},
+  {emoji:'👰',image:"harshi.jpg",name:'Harshitha',age:27,loc:'United States of America',edu:'MS Engineering',job:'Not working',religion:'Hindu',caste:'Kamma',height:'5\'2"',income:'Nill',new:true,verified:true},
+];
+
+function renderProfiles() {
+  const grid = document.getElementById('profilesGrid');
+  grid.innerHTML = profiles.map((p,i) => `
+    <div class="profile-card fade-up" onclick="openProfile(${i})">
+      <div class="profile-img">
+        <img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;border-radius:20px 20px 0 0;">
+        ${p.verified ? '<span class="verified-badge">✔ Verified</span>' : ''}
+        ${p.new ? '<span class="new-badge">New</span>' : ''}
+      </div>
+      <div class="profile-body">
+        <div class="profile-name">${p.name}</div>
+        <div class="profile-meta">${p.age} yrs · ${p.loc}</div>
+        <div class="profile-tags">
+          <span class="tag">${p.edu}</span>
+          <span class="tag">${p.caste}</span>
+          <span class="tag">${p.height}</span>
+        </div>
+        <div class="profile-actions">
+          <button class="btn-interest" onclick="event.stopPropagation();sendInterestProfile('${p.name}')">💌 Interest</button>
+          <button class="btn-view" onclick="event.stopPropagation();openProfile(${i})">View</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  setTimeout(initObserver, 100);
+}
+
+function openProfile(i) {
+  const p = profiles[i];
+  document.getElementById('pdAvatar').src = p.image;
+  document.getElementById('pdName').textContent = p.name;
+  document.getElementById('pdSub').textContent = `${p.age} years · ${p.loc}`;
+  document.getElementById('pdDetails').innerHTML = [
+    ['Age', p.age + ' years'],['Location', p.loc],['Education', p.edu],
+    ['Profession', p.job],['Religion', p.religion],['Caste', p.caste],
+    ['Height', p.height],['Annual Income', p.income]
+  ].map(([l,v]) => `<div class="detail-item"><label>${l}</label><span>${v}</span></div>`).join('');
+  document.getElementById('profileModal').classList.add('open');
+}
+function closeProfileModal(){document.getElementById('profileModal').classList.remove('open');}
+
+// ── MODAL ──
+function openModal(tab) {
+  document.getElementById('authModal').classList.add('open');
+  switchTab(tab || 'register');
+}
+function closeModal(){document.getElementById('authModal').classList.remove('open');}
+function switchTab(tab) {
+  document.querySelectorAll('.modal-tab').forEach((t,i) => t.classList.toggle('active', (i===0&&tab==='register')||(i===1&&tab==='login')));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  document.getElementById('modalTitle').textContent = tab==='login' ? 'Welcome Back!' : 'Join Esha Matrimony';
+  document.getElementById('modalSubtitle').textContent = tab==='login' ? 'Login to your account' : 'Create your free profile in minutes';
+}
+
+function handleRegister() {
+  closeModal();
+  showNotif('🎉 Profile created successfully! Welcome to Esha Matrimony.');
+}
+function handleLogin() {
+  closeModal();
+  showNotif('✅ Logged in successfully! Welcome back.');
+}
+
+// ── ACTIONS ──
+function sendInterest(){closeProfileModal();showNotif('💌 Interest sent successfully!');}
+function shortlist(){showNotif('⭐ Profile shortlisted!');}
+function sendInterestProfile(name){showNotif(`💌 Interest sent to ${name}!`);}
+function submitForm(){showNotif('✅ Message sent! We\'ll reply within 24 hours.');}
+function showSearchResults(){showNotif('🔍 Showing matching profiles below ↓');document.getElementById('profiles-section').scrollIntoView({behavior:'smooth'});}
+function adminAction(a){showNotif('🔐 Admin: '+a+' — Please authenticate first.');}
+function subscribeNewsletter(){showNotif('📧 Subscribed! You\'ll get our updates.');}
+
+// ── NOTIFICATION ──
+function showNotif(msg) {
+  const n = document.getElementById('notification');
+  n.querySelector('.notification-text').innerHTML = msg;
+  n.classList.add('show');
+  setTimeout(() => n.classList.remove('show'), 4000);
+}
+
+// ── NAV SCROLL ──
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ── HAMBURGER ──
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ── ANCHOR NAV OFFSET FOR FIXED HEADER ──
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', function(e) {
+    const id = this.getAttribute('href');
+    if (!id || id === '#') return;
+    const target = document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    const navHeight = document.getElementById('navbar')?.offsetHeight || 0;
+    const top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 8;
+    window.scrollTo({ top, behavior: 'smooth' });
+    document.getElementById('mobileMenu').classList.remove('open');
+  });
+});
+
+// ── INTERSECTION OBSERVER ──
+function initObserver() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+  }, {threshold: 0.12});
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+}
+
+// ── PAYMENT MODAL FUNCTIONS ──
+function openPaymentModal(packageName, packagePrice) {
+  document.getElementById('selectedPackage').textContent = packageName;
+  document.getElementById('selectedPrice').textContent = packagePrice;
+  document.getElementById('paymentModal').classList.add('open');
+}
+
+function closePaymentModal() {
+  document.getElementById('paymentModal').classList.remove('open');
+}
+
+function selectPaymentMethod(element, method) {
+  document.querySelectorAll('.payment-method').forEach(el => el.classList.remove('active'));
+  element.classList.add('active');
+  const bankSection = document.getElementById('bankDetailsSection');
+  const upiSection = document.getElementById('upiSection');
+  if(method === 'bank') {
+    bankSection.style.display = 'block';
+    upiSection.style.display = 'none';
+  } else {
+    bankSection.style.display = 'none';
+    upiSection.style.display = 'block';
+  }
+}
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text);
+  alert('✅ Copied to clipboard!');
+}
+
+function processPayment() {
+  const packageName = document.getElementById('selectedPackage').textContent;
+  alert('✅ Payment Details Submitted!\n\nPackage: ' + packageName + '\n\nYour transaction has been recorded. Please upload the payment receipt within the next step.\n\n✨ Your membership will be activated within 5 minutes of confirmation!');
+  closePaymentModal();
+}
+
+// ── CLOSE ON OVERLAY CLICK ──
+document.getElementById('authModal').addEventListener('click', function(e){if(e.target===this)closeModal();});
+document.getElementById('profileModal').addEventListener('click', function(e){if(e.target===this)closeProfileModal();});
+document.getElementById('paymentModal').addEventListener('click', function(e){if(e.target===this)closePaymentModal();});
+
+// ── INIT ──
+renderProfiles();
+initObserver();
+setTimeout(() => showNotif('👋 Welcome to Esha Matrimony! Register free today.'), 2000);
+</script>
+</body>
+</html>
