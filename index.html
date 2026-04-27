@@ -10,9 +10,68 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 .profile-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;}
+  height: 250px;
+  object-fit: cover;
+  object-position : top;}
 <style>
+  img {width: 100%;
+  height: 250px;
+  object-fit: cover !important;
+  object-position: top !important;}
+  .scroll-container {
+  display: flex;
+  overflow-x: auto;          /* horizontal scroll */
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;             /* hide scrollbar */
+}
+
+.scroll-item {
+  min-width: 300px;          /* card width */
+  height: 200px;
+  flex-shrink: 0;            /* important */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.scroll-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  width: 100%;
+  height: 220px;              /* box size */
+  border-radius: 15px;
+  overflow: hidden;           /* image overflow cut */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* image crop + fit */}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGE SIZE CONTROL */
+.card img {
+  width: 100%;
+  height: 200px;       /* fix height */
+  object-fit: cover;   /* crop ayyi neat ga untundi */
+  border-radius: 10px;
+}
+  
 :root {
   --crimson: #8B1A1A;
   --crimson-light: #C0392B;
@@ -275,6 +334,7 @@ section[id]{scroll-margin-top:84px;}
 .stories-grid .story-card:nth-child(3) .story-stars{color:#20B2AA;}
 .stories-grid .story-card:nth-child(3)::before{content:'💎';position:absolute;top:12px;right:12px;font-size:24px;opacity:.3;}
 
+
 /* ── TESTIMONIALS ── */
 #testimonials{background:linear-gradient(180deg,var(--gold-pale) 0%,white 100%);}
 .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;}
@@ -286,6 +346,8 @@ section[id]{scroll-margin-top:84px;}
 .testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--crimson),var(--gold));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:16px;}
 .testi-name{font-weight:700;font-size:14px;color:var(--dark);}
 .testi-role{font-size:12px;color:var(--text-light);}
+
+
 
 /* ── CONTACT ── */
 #contact{background:white;}
@@ -815,7 +877,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 24px 0;}
       <div class="story-card fade-up">
         <div class="story-couple">
           <div class="couple-avatars">
-            <div class="avatar" style="background:transparent;border:none;"><img src= "harsha.png" alt="Harsha" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
+            <div class="avatar" style="background:transparent;border:none;"><img src= "harsha.jpg" alt="Harsha" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
             <div class="avatar" style="background:transparent;border:none;"><img src="navya.jpg" alt="Navya sri" style="width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid white;box-shadow:0 2px 10px rgba(0,0,0,.1);"></div>
           </div>
           <div class="heart-icon">❤️</div>
@@ -863,6 +925,36 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 24px 0;}
     </div>
   </div>
 </section>
+<div class="scroll-container">
+
+  <div class="scroll-item">
+    <img src="couple1.jpg">
+  </div>
+
+  <div class="scroll-item">
+    <img src="couple2.jpg">
+  </div>
+
+  <div class="scroll-item">
+    <img src="couple3.jpg">
+  </div>
+
+  <div class="scroll-item">
+    <img src="couple4.jpg">
+  </div>
+
+  <div class="scroll-item">
+    <img src="couple5.jpg">
+  </div>
+
+  <div class="scroll-item">
+    <img src="couple6.jpg">
+  </div>
+
+</div>
+
+
+</div>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials">
@@ -1052,7 +1144,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 24px 0;}
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Esha Matrimony. All rights reserved.</p>
+    <p>© 2019 Esha Matrimony. All rights reserved.</p>
     <p><a href="#" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 8px;">Privacy Policy</a> · <a href="#" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 8px;">Terms of Service</a> · <a href="#" style="color:rgba(255,255,255,.4);text-decoration:none;">Cookie Policy</a></p>
   </div>
 </footer>
@@ -1226,7 +1318,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 24px 0;}
 // ── PROFILES DATA
 const profiles = [
   {emoji:'👰',image:"keerthana.jpg",name:'Keerthana vaddadi',age:28,loc:'united kingdom',edu:'masters',job:'Software proffesional',religion:'Hindu',caste:'reddy',height:'5\'3"',income:'GBP 40,000 - 50,000',new:true,verified:true},
-  {emoji:'🤵',image:"harshith.jpg",name:'Harshith Kumar',age:28,loc:'Bengaluru',edu:'B.Com',job:'Sales Manager',religion:'Hindu',caste:'Mudhiraj',height:'5\'7"',income:'₹8 - 9 LPA',new:false,verified:true},
+  {emoji:'🤵',image:"harshith-kk.png",name:'HarshithKumar',age:28,loc:'Bengaluru',edu:'B.Com',job:'Sales Manager',religion:'Hindu',caste:'Mudhiraj',height:'5\'7"',income:'₹8 - 9 LPA',new:false,verified:true},
   {emoji:'👰',image:"rashmitha.jpg",name:'Rashmitha Mulpuri',age:26,loc:'Hyderabad, Telangana',edu:'MBA',job:'HR Generalist',religion:'Hindu',caste:'Kamma',height:'5\'8"',income:'Not specified',new:true,verified:true},
   {emoji:'🤵',image:"pavan gujjari.jfif",name:'Pavan Gujjari',age:29,loc:'Sangareddy',edu:'B.Tech',job:'Software Professional',religion:'Hindu',caste:'Padmashali',height:'5\'7"',income:'₹20 LPA',new:false,verified:true},
   {emoji:'👰',image:"nithya.jpg",name:'Nithyashri Ramesh',age:21,loc:'Chennai',edu:'BCA',job:'Software Professional',religion:'Hindu',caste:'Balija-Naidu',height:'5\'1"',income:'₹4 - 7 LPA',new:true,verified:true},
